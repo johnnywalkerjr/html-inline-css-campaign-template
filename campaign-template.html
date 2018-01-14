@@ -1,0 +1,180 @@
+<style type="text/css">
+/* css reset */
+html, body, div, span, object, iframe, h1, h2, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;}
+/* campaign layout */
+.phq-campaignWrapper{background:#f0ede8; min-height:100%; margin:0px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;} /* changes background colour */
+.phq-gradient{
+  background: rgba(73,155,234,1);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(3,48,97,1)));
+  background: -webkit-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(3,48,97,1) 100%);
+  background: linear-gradient(to bottom, rgba(73,155,234,1) 0%, rgba(3,48,97,1) 100%);
+} 
+.phq-campaignContainer{padding-bottom:10px;}/* changes padding on the bottom of the tempalate*/
+.phq-container{padding: 10px 10px 0; margin:0 auto;}
+.phq-btn-container{padding: 10px 10px; margin:0 auto;}
+.phq-align-center{text-align: center;}
+.phq-align-left{text-align: left;}
+.phq-align-right{text-align: right;}
+.phq-spacer{background: transparent; width:100%;}
+.phq-lineBreak{background: #000; width: 100px; height: 2px;margin: 10px auto;}
+.caps{text-transform: uppercase;}
+ hr{border:none; background-color:#ccc; color:#ccc; height: 2px;}
+ .shadow {-webkit-box-shadow: -7px -2px 123px -42px rgba(0,0,0,1); -moz-box-shadow: -7px -2px 123px -42px rgba(0,0,0,1); box-shadow: -7px -2px 123px -42px rgba(0,0,0,1);}
+/* layout typography */
+.phq-row a {text-decoration: none;} /* removes all underlining of links */
+.phq-row p {font-size: 14px; line-height:1.42857143; padding:0px 10px 10px 0px;} /* change overall paragraph font size here */
+.phq-row p span.lighter{font-weight:lighter}
+.phq-row p span.bold{font-weight:bold;}
+.phq-row p span.bolder{font-weight:bolder;}
+.phq-row p span.underline{text-decoration: underline;}
+.phq-row p span.italic{font-style: italic;}
+.phq-row p span.link a{font-weight:bold; color: #337ab7;}
+.phq-row p span.link a:active {background: none;}
+.phq-row h1{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 26px; font-weight: 500; line-height: 1.1;padding:0px 10px 10px 0px;}
+.phq-row h1 span{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: lighter;}
+.phq-row h2{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 500; line-height: 1.1;padding:0px 10px 10px 0px;}
+.phq-row h2 span{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: lighter;}
+/* button styles */
+.phq-btn{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;display: inline-block; padding: 6px 12px; margin: 10px 0; font-size: 14px; font-weight: 200; line-height: 1.42857143;text-align: center; border: 1px solid transparent; border-radius: 3px;}
+.phq-btn-solid{color: #fff; background-color: #000; border-color: #333;}
+.phq-btn-solid a:focus a:active {color: #fff; background-color:#333; border-color:#000; outline:none;}
+.phq-btn-wired{color:#333; background-color:transparent;border-color: #000;}
+.phq-btn-wired a:focus, a:active {color:#fff; background-color: #333; border-color: #000; outline: none;}
+/* button sizes */
+.phq-btn-large{padding: 10px 16px; font-size: 18px; line-height: 1.3333333;}
+.phq-btn-small{padding: 5px 10px; font-size: 12px; line-height: 1.5;}
+.phq-btn-extrasmall{ padding: 1px 5px; font-size: 12px; line-height: 1.5;}
+.phq-btn-block {display:block;}
+/* campaign image settings */
+img {vertical-align: middle;margin: 0 auto;}
+.phq-img-responsive{ display: block; max-width: 100%; height: auto;}
+.phq-img-circle{border-radius: 50%;margin: 5px;}
+.phq-img-circle-border{border-radius: 50%;margin: 5px; border: 5px solid rgba(255, 255, 255, .5);}
+.phq-img-square-rounded{border-radius: 10px;}
+/*horizontal title and description*/
+.phq-h-title{font-weight: bold;font-size: 14px;}
+.phq-horizontal{line-height:1.42857143;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+.phq-h-description{font-size: 14px;}
+</style>
+<div class="phq-campaignWrapper"><!-- change background color add style class here-->
+<div class="phq-campaignContainer"><!-- typography -->
+<div class="phq-container phq-align-center">
+<div class="phq-row">
+<p>Default <span class="bolder">Paragraph text</span> &quot;Lorem ipsum dolor sit amet, <span class="link"><a href="#">describe your link</a></span> elit, sed do <span class="bold">eiusmod tempor</span> incididunt ut <span class="underline">labore et</span> dolore magna aliqua. <span class="italic">Ut enim ad minim veniam, quis nostrud exercitation</span> ullamco laboris nisi ut aliquip ex ea commodo consequat. <span class="lighter">Paragraph really light text</span></p>
+
+<h1>Normal H1 <span>Light H1</span></h1>
+
+<h2>Normal H2 <span>Light H2</span></h2>
+</div>
+<!-- ./end of row --></div>
+<!-- ./container --><!-- responsive images with padding -->
+
+<div class="phq-container">
+<div class="phq-row"><img alt="Responsive image" class="phq-img-responsive" src="http://placehold.it/1000x500" /></div>
+<!-- ./end of row --></div>
+<!-- ./container --><!-- white space divider set to 10px change as needed-->
+
+<div class="phq-spacer" style="height:10px;">&nbsp;</div>
+<!-- ./end of spacer --><!-- responsive images with no padding --><img alt="Responsive image" class="phq-img-responsive" src="http://placehold.it/1000x500" /> <!-- circular image with shadow class-->
+<div class="phq-container phq-align-center">
+<div class="phq-row"><img class="phq-img-circle shadow" data-holder-rendered="true" src="http://placehold.it/140x140" style="width: 140px; height: 140px;" /></div>
+<!-- ./end of row --></div>
+<!-- ./container --> <!-- circular image with border -->
+
+<div class="phq-container phq-align-center">
+<div class="phq-row"><img class="phq-img-circle-border" data-holder-rendered="true" src="http://placehold.it/140x140" style="width: 140px; height: 140px;" /></div>
+<!-- ./end of row --></div>
+<!-- ./container --> <!-- rounded square image with border -->
+
+<div class="phq-container phq-align-center">
+<div class="phq-row"><img class="phq-img-square-rounded" data-holder-rendered="true" src="http://placehold.it/140x140" style="width: 140px; height: 140px;" /></div>
+<!-- ./end of row --></div>
+<!-- ./container -->
+
+<div class="phq-container">
+<div class="phq-row">
+<div class="phq-lineBreak">&nbsp;</div>
+</div>
+</div>
+<!-- FULL WIDTH BUTTONS -->
+
+<div class="phq-btn-container phq-align-center"><!-- EMPTY BUTTONS -->
+<div class="phq-row"><a class="phq-btn phq-btn-solid phq-btn-large phq-btn-block" href="#" role="button">Full width linked button</a> <a class="phq-btn phq-btn-wired phq-btn-large phq-btn-block" href="#" role="button">Full width linked button</a></div>
+<!-- CALL US -->
+
+<div class="phq-row"><a class="phq-btn phq-btn-solid phq-btn-large phq-btn-block" href="#" onclick="window.location='tel:ADD-TELEPHONE-NUMBER-HERE'; return false;" role="button">Call Us</a> <a class="phq-btn phq-btn-wired phq-btn-large phq-btn-block" href="#" onclick="window.location='tel:ADD-TELEPHONE-NUMBER-HERE'; return false;" role="button">Call Us</a></div>
+<!-- EMAIL US -->
+
+<div class="phq-row"><a class="phq-btn phq-btn-solid phq-btn-large phq-btn-block" href="#" onclick="window.location='mailto:name@example.com?Subject=Add example of subject line here&amp;body=Add body of email here'; return false;" role="button">Email Us</a> <a class="phq-btn phq-btn-wired phq-btn-large phq-btn-block" href="#" onclick="window.location='mailto:name@example.com?Subject=Add example of subject line here&amp;body=Add body of email here'; return false;" role="button">Email Us</a></div>
+</div>
+<!-- ./phq-btn-container -->
+
+<hr /> <!-- SMALL WIDTH BUTTONS -->
+<div class="phq-btn-container phq-align-center"><!-- EMPTY BUTTONS -->
+<div class="phq-row"><a class="phq-btn phq-btn-solid phq-btn-small" href="#" role="button">Full width linked button</a></div>
+
+<div class="phq-row"><a class="phq-btn phq-btn-wired phq-btn-small" href="#" role="button">Full width linked button</a></div>
+<!-- CALL US -->
+
+<div class="phq-row"><a class="phq-btn phq-btn-solid phq-btn-small" href="#" onclick="window.location='tel:ADD-TELEPHONE-NUMBER-HERE'; return false;" role="button">Small Call Us Button</a></div>
+
+<div class="phq-row"><a class="phq-btn phq-btn-wired phq-btn-small" href="#" onclick="window.location='tel:ADD-TELEPHONE-NUMBER-HERE'; return false;" role="button">Small Call Us Button</a></div>
+<!-- EMAIL US -->
+
+<div class="phq-row"><a class="phq-btn phq-btn-solid phq-btn-small" href="#" onclick="window.location='mailto:name@example.com?Subject=Add example of subject line here&amp;body=Add body of email here'; return false;" role="button">Small Email Us Button</a></div>
+
+<div class="phq-row"><a class="phq-btn phq-btn-wired phq-btn-small" href="#" onclick="window.location='mailto:name@example.com?Subject=Add example of subject line here&amp;body=Add body of email here'; return false;" role="button">Small Email Us Button</a></div>
+</div>
+<!-- ./phq-btn-container -->
+
+<div class="phq-btn-container phq-align-center"><!-- EMPTY BUTTONS -->
+<div class="phq-row"><a class="phq-btn phq-btn-solid phq-btn-small" href="#" role="button">Full width linked button</a> <a class="phq-btn phq-btn-wired phq-btn-small" href="#" role="button">Full width linked button</a></div>
+<!-- CALL US -->
+
+<div class="phq-row"><a class="phq-btn phq-btn-solid phq-btn-small" href="#" onclick="window.location='tel:ADD-TELEPHONE-NUMBER-HERE'; return false;" role="button">Small Call Us Button</a> <a class="phq-btn phq-btn-wired phq-btn-small" href="#" onclick="window.location='tel:ADD-TELEPHONE-NUMBER-HERE'; return false;" role="button">Small Call Us Button</a></div>
+<!-- EMAIL US -->
+
+<div class="phq-row"><a class="phq-btn phq-btn-solid phq-btn-small" href="#" onclick="window.location='mailto:name@example.com?Subject=Add example of subject line here&amp;body=Add body of email here'; return false;" role="button">Small Email Us Button</a> <a class="phq-btn phq-btn-wired phq-btn-small" href="#" onclick="window.location='mailto:name@example.com?Subject=Add example of subject line here&amp;body=Add body of email here'; return false;" role="button">Small Email Us Button</a></div>
+</div>
+<!-- ./phq-btn-container -->
+
+<hr /> <!-- EXTRA SMALL WIDTH BUTTONS -->
+<div class="phq-btn-container phq-align-center"><!-- EMPTY BUTTONS -->
+<div class="phq-row"><a class="phq-btn phq-btn-solid phq-btn-extrasmall" href="#" role="button">Xtra Full width linked button</a></div>
+
+<div class="phq-row"><a class="phq-btn phq-btn-wired phq-btn-extrasmall" href="#" role="button">Xtra Full width linked button</a></div>
+<!-- CALL US -->
+
+<div class="phq-row"><a class="phq-btn phq-btn-solid phq-btn-extrasmall" href="#" onclick="window.location='tel:ADD-TELEPHONE-NUMBER-HERE'; return false;" role="button">Xtra Small Call Us Button</a></div>
+
+<div class="phq-row"><a class="phq-btn phq-btn-wired phq-btn-extrasmall" href="#" onclick="window.location='tel:ADD-TELEPHONE-NUMBER-HERE'; return false;" role="button">Xtra Small Call Us Button</a></div>
+<!-- EMAIL US -->
+
+<div class="phq-row"><a class="phq-btn phq-btn-solid phq-btn-extrasmall" href="#" onclick="window.location='mailto:name@example.com?Subject=Add example of subject line here&amp;body=Add body of email here'; return false;" role="button">Xtra Small Email Us Button</a></div>
+
+<div class="phq-row"><a class="phq-btn phq-btn-wired phq-btn-extrasmall" href="#" onclick="window.location='mailto:name@example.com?Subject=Add example of subject line here&amp;body=Add body of email here'; return false;" role="button">Xtra Small Email Us Button</a></div>
+</div>
+<!-- ./phq-btn-container -->
+
+<div class="phq-btn-container phq-align-center"><!-- EMPTY BUTTONS -->
+<div class="phq-row"><a class="phq-btn phq-btn-solid phq-btn-extrasmall" href="#" role="button">Xtra Full width linked button</a> <a class="phq-btn phq-btn-wired phq-btn-extrasmall" href="#" role="button">Xtra Full width linked button</a></div>
+<!-- CALL US -->
+
+<div class="phq-row"><a class="phq-btn phq-btn-solid phq-btn-extrasmall" href="#" onclick="window.location='tel:ADD-TELEPHONE-NUMBER-HERE'; return false;" role="button">Xtra Small Call Us Button</a> <a class="phq-btn phq-btn-wired phq-btn-extrasmall" href="#" onclick="window.location='tel:ADD-TELEPHONE-NUMBER-HERE'; return false;" role="button">Xtra Small Call Us Button</a></div>
+<!-- EMAIL US -->
+
+<div class="phq-row"><a class="phq-btn phq-btn-solid phq-btn-extrasmall" href="#" onclick="window.location='mailto:name@example.com?Subject=Add example of subject line here&amp;body=Add body of email here'; return false;" role="button">Xtra Small Email Us Button</a> <a class="phq-btn phq-btn-wired phq-btn-extrasmall" href="#" onclick="window.location='mailto:name@example.com?Subject=Add example of subject line here&amp;body=Add body of email here'; return false;" role="button">Xtra Small Email Us Button</a></div>
+</div>
+<!-- ./phq-btn-container -->
+
+<hr /> <!-- HORIZONTAL DESCRIPTION -->
+<div class="phq-container">
+<div class="phq-row">
+<div class="horizontal"><span class="phq-h-title">Title:</span> <span class="phq-h-description">description goes here</span><br />
+<span class="phq-h-title">Title:</span> <span class="phq-h-description">description goes here</span></div>
+</div>
+</div>
+</div>
+<!-- ./end of campaignContainer --></div>
+<!-- ./end of campaignWrapper -->
